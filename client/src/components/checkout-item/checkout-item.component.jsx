@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { useDispatch } from "react-redux";
 
 import { clearItemFromCart, addItem, removeItem } from '../../redux/cart/cart.action'
@@ -34,4 +34,4 @@ const CheckoutItem = ({ cartItem }) => {
   )
 };
 
-export default CheckoutItem;
+export default memo(CheckoutItem);
