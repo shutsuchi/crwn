@@ -15,6 +15,11 @@ export const GroupContainer = styled.div`
   input[type='password'] {
     letter-spacing: 0.3em;
   }
+
+  @media screen and (max-width: 800px) {
+    margin: 0 auto;
+    width: 90vw;
+  }
 `;
 
 export const FormInputContainer = styled.input`

@@ -4,6 +4,11 @@ export const SignInContainer = styled.div`
   width: 380px;
   display: flex;
   flex-direction: column;
+
+  @media screen and (max-width: 800px) {
+    align-items: center;
+    width: 90vw;
+  }
 `;
 
 export const SignInTitle = styled.h2`
@@ -13,4 +18,12 @@ export const SignInTitle = styled.h2`
 export const ButtonsBarContainer = styled.div`
   display: flex;
   justify-content: space-between;
+
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+
+    > *:first-child {
+      margin-bottom: 10px;
+    }
+  }
 `;

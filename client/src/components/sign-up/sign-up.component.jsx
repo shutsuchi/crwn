@@ -2,11 +2,10 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 
 import FormInput from '../form-input/form-input.component';
-import CustomButton from '../custom-button/custom-button.component';
 
 import { signUpStart } from '../../redux/user/user.action';
 
-import { SignUpContainer, SignUpTitle } from './sign-up.styles';
+import { SignUpContainer, SignUpTitle, SignUpButton } from './sign-up.styles';
 
 const SignUp = () => {
   const dispatch = useDispatch();
@@ -79,7 +78,7 @@ const SignUp = () => {
           required
         />
 
-        <CustomButton type='submit'>SIGN UP</CustomButton>
+        <SignUpButton type='submit'>SIGN UP</SignUpButton>
 
       </form>
     </SignUpContainer>
